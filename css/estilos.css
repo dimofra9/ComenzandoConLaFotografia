@@ -1,3 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+	font-family: "dancing-script";
+	background: #02010a;
+}
 
+header {
+	background: #5b7989;
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 3px #02010a;	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+}
+
+h1::selection {
+	background: white;
+}
+#menu {
+	flex-flow: row wrap;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	border: solid 5px #C74749;
+}
