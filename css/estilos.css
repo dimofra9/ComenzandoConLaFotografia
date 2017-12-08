@@ -1,8 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	font-family: "dancing-script";
+	font-family: dancing-script;
 	background: #02010a;
+	width: 95%;
+	margin: auto;
 }
 
 header {
@@ -10,29 +12,29 @@ header {
 	color: white;
 	text-shadow: 2px 2px 3px #02010a;	
 	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	display: inline-flex;
-
+	border-top-right-radius: 10px;	
 }
 
 h1 {
+	text-align: left;
 	padding: 0px 10px;
+	display: inline-flex;
+}
+
+#menu {
+	text-align: right;
+	display: inline-flex;
+	flex-flow: row wrap;
+	margin-left: 80%;
 }
 
 h1::selection {
 	background: white;
 }
-#menu {
-	flex-flow: row wrap;
-	text-align: right;
-	display: inline-flex;
-	margin-left: 27.6em;
-}
 
 a {
 	text-decoration: none;
 	color: white;
-	margin: 1px;
-	padding: 25.8px 10px;
-	
+	margin: 5px;
+	padding: 5px 5px;	
 }
