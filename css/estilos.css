@@ -43,3 +43,37 @@ a {
 	margin: 5px;
 	padding: 5px 5px;
 }
+
+#contenido {
+	text-align: center;
+}
+
+#imgprincipal {
+	background-color: #82c3a6;
+}
+
+#imgsecundaria {
+	background-color: #d5c75f;
+}
+
+.adaptativa-porcentaje {
+	width: 100%;
+}
+
+.adaptativa-porcentaje1 {
+	width: 100%;
+}
+
+.adaptativa-porcentaje2 {
+	width: 100%;
+}
+
+#contenido{
+	display: flex;
+	flex-direction: column;
+}
+
+.imagenes{
+	display: flex;
+	flex-direction: row;
+}
