@@ -3,8 +3,6 @@
 body {
 	font-family: dancing-script;
 	background: #02010a;
-	width: 95%;
-	margin: auto;
 }
 
 header {
@@ -12,20 +10,22 @@ header {
 	color: white;
 	text-shadow: 2px 2px 3px #02010a;	
 	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
+	border-top-right-radius: 10px;
+	width: 100%;
 }
 
-h1 {
+#titulo {
 	text-align: left;
-	padding: 0px 10px;
+	padding: 0px 0px 0px 10px;
 	display: inline-flex;
 }
 
 #menu {
 	text-align: right;
+	padding: 0px 5px 5px 0px;
 	display: inline-flex;
 	flex-flow: row wrap;
-	margin-left: 80%;
+	margin-left: 64%;
 }
 
 h1::selection {
@@ -36,5 +36,5 @@ a {
 	text-decoration: none;
 	color: white;
 	margin: 5px;
-	padding: 5px 5px;	
+	padding: 5px 5px;
 }
