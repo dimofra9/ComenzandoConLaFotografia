@@ -1,8 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
+
+@font-face {
+	font-family: 'dancing-script';
+	src: url(../fuentes/DancingScript-Regular.ttf)
+}
 body {
-	font-family: dancing-script;
 	background: #02010a;
+	font-family: "dancing-script";	
 }
 
 header {
@@ -25,7 +30,7 @@ header {
 	padding: 0px 5px 5px 0px;
 	display: inline-flex;
 	flex-flow: row wrap;
-	margin-left: 64%;
+	margin-left: 70%;
 }
 
 h1::selection {
