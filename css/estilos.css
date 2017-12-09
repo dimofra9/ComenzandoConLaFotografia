@@ -68,12 +68,21 @@ a {
 
 .adaptativa-porcentaje1 {
 	width: 80%;
-	border: solid 2px black;	
+	border: solid 2px black;
+	box-shadow: 1px 1px #82c3a6;
+	transition-property:transform: rotate;
+	transition-duration: 1s;
+}
+
+.adaptativa-porcentaje1:hover{
+	transform: rotate(10px);
 }
 
 .adaptativa-porcentaje2 {
 	width: 80%;
-	
+	border: solid 2px black;
+	box-shadow: 1px 1px #82c3a6;
+	transition-property: 	
 }
 
 .imagenes{
