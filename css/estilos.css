@@ -46,31 +46,34 @@ a {
 
 #contenido {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
-#imgprincipal {
+#principal {
 	background-color: #82c3a6;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-#imgsecundaria {
+#secundaria {
 	background-color: #d5c75f;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .adaptativa-porcentaje {
-	width: 100%;
+	width: 80%;
 }
 
 .adaptativa-porcentaje1 {
-	width: 100%;
+	width: 80%;
+	border: solid 2px black;	
 }
 
 .adaptativa-porcentaje2 {
-	width: 100%;
-}
-
-#contenido{
-	display: flex;
-	flex-direction: column;
+	width: 80%;
+	
 }
 
 .imagenes{
