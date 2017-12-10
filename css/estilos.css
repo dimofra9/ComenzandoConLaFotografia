@@ -13,24 +13,30 @@ body {
 header {
 	background: #5b7989;
 	color: white;
-	text-shadow: 2px 2px 3px #02010a;	
+	text-shadow: 2px 2px 3px #02010a;
 	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	width: 100%;
+	border-top-right-radius: 10px;	
 }
 
-#titulo {
-	text-align: left;
-	padding: 0px 0px 0px 10px;
-	display: inline-flex;
+#encabezado {	
+	display: flex;
+	flex-direction: column;
 }
 
-#menu {
+.encabezado {
+	display: flex;
+	flex-direction: row;
+}
+
+#encabezado .encabezado div{
+	width: 50%;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav {
 	text-align: right;
-	padding: 0px 5px 5px 0px;
-	display: inline-flex;
-	flex-flow: row wrap;
-	margin-left: 70%;
 }
 
 h1::selection {
@@ -64,25 +70,32 @@ a {
 
 .adaptativa-porcentaje {
 	width: 80%;
+	box-shadow: 2px 2px #02010a;
 }
 
 .adaptativa-porcentaje1 {
 	width: 80%;
 	border: solid 2px black;
-	box-shadow: 1px 1px #82c3a6;
-	transition-property:transform: rotate;
+	box-shadow: 2px 2px #02010a;
+	transition-property: transform: rotate;
 	transition-duration: 1s;
 }
 
-.adaptativa-porcentaje1:hover{
-	transform: rotate(10px);
+.adaptativa-porcentaje1:hover {
+	transform: rotate(10deg);
 }
 
 .adaptativa-porcentaje2 {
 	width: 80%;
 	border: solid 2px black;
-	box-shadow: 1px 1px #82c3a6;
-	transition-property: 	
+	box-shadow: 2px 2px #02010a;
+	position: 5px 20px 0px 0px;
+	transition-property: transform: translate;	
+	transition-duration: 1s;	
+}
+
+.adaptativa-porcentaje2:hover {
+	transform: translate(5px, -20px);
 }
 
 .imagenes{
@@ -97,6 +110,10 @@ footer {
 	border-bottom-right-radius: 10px;
 }
 
+footer div {
+	width: 100%;
+}
+
 #piedepagina {	
 	display: flex;
 	flex-direction: column;
@@ -105,6 +122,10 @@ footer {
 .piedepagina {
 	display: flex;
 	flex-direction: row;
+}
+
+.pies {
+	margin: 0 center;
 }
 
 .icono {
