@@ -5,6 +5,13 @@
 	font-family: 'dancing-script';
 	src: url(../fuentes/DancingScript-Regular.ttf)
 }
+
+@media (min-width: 900px) {
+	nav {
+		text-align: center;
+	}
+}
+
 body {
 	background: #02010a;
 	font-family: "dancing-script";	
@@ -15,10 +22,8 @@ header {
 	color: white;
 	text-shadow: 2px 2px 3px #02010a;
 	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
-}
-
-#encabezado {	
+	border-top-right-radius: 10px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
