@@ -6,12 +6,6 @@
 	src: url(../fuentes/DancingScript-Regular.ttf)
 }
 
-#contenido {
-	
-	width: 900px;
-	margin: 0 auto;
-}
-
 body {
 	color: black;
 	background: #02010a;
@@ -27,8 +21,6 @@ body {
 	text-shadow: 2px 2px #02010a;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	display: flex;
-	flex-flow: row wrap;
 }
 
 #titulo {
@@ -51,7 +43,7 @@ body {
 }
 
 .icono {
-	width: 7%;
+	width: 15px;
 }
 
 body::selection {
@@ -75,24 +67,18 @@ section {
 
 #secundaria {
 	background-color: #d5c75f;
-	padding: 1% 0%;
+	padding: 1% 0% 1% 0%;
 	box-sizing: border-box;
 	text-align: center;	
-}
-
-.secundaria {
-	box-sizing: border-box;
-	height: 100%;
-	background-color: #d5c75f;
-	display: flex;
-	
 }
 
 #izquierda {
 	border: solid 2px black;
 	box-shadow: 2px 2px #02010a;
+	padding: 0%;
 	transition-property: transform: rotate;
 	transition-duration: 1s;
+	
 }
 
 #izquierda:hover {
@@ -102,7 +88,7 @@ section {
 #derecha {
 	border: solid 2px black;
 	box-shadow: 2px 2px #02010a;
-	position: 5px 20px 0px 0px;
+	padding: 0%;
 	transition-property: transform: translate;	
 	transition-duration: 1s;	
 }
@@ -111,26 +97,76 @@ section {
 	transform: translate(5px, -20px);
 }
 
-.imagenes{
-	display: flex;
-	flex-direction: row;
+figcaption {
+	padding: -10% 0%;
 }
 
 #footer {
 	background: #C6d5c5;
-	padding: 0% 1% 0.5% 1%;
+	padding: 1% 1% 5% 1%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	display: flex;
-	flex-flow: row wrap;
 }
 
 #footer div {
-	padding: 0% 1.8%;
-}
+		padding: 0% 1.8% 2% 1.8%;
+	}
 
 p {
 	font-size: 1.5em;
 	font-weight: bold;
 	padding: 0%;
+}
+
+@keyframes animacion-slidein {
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
+#contenido {
+	animation-name: animacion-slidein;
+	animation-duration: 0.5s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@media (min-width: 900px) {
+	#header {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	#contenido {
+		width: 900px;
+		margin: 0 auto;
+	}
+	
+	.secundaria {
+		background-color: #d5c75f;
+		display: flex;	
+	}
+	
+	#footer {
+		display: flex;
+		flex-flow: row wrap;
+	}
+}
+
+@media (max-width: 900px) {
+	#titulo {
+		text-align: center;
+	}
+	
+	#menu {
+		text-align: center;
+	}
 }
