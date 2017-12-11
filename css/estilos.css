@@ -6,45 +6,55 @@
 	src: url(../fuentes/DancingScript-Regular.ttf)
 }
 
-@media (min-width: 900px) {
-	nav {
-		text-align: center;
-	}
+#contenido {
+	
+	width: 900px;
+	margin: 0 auto;
 }
 
 body {
+	color: black;
 	background: #02010a;
-	font-family: "dancing-script";	
+	font-family: "dancing-script";
+	font-size: 16px;
 }
 
-header {
+#header {
+	
 	background: #5b7989;
 	color: white;
-	text-shadow: 2px 2px 3px #02010a;
+	padding: 0% 1%;
+	text-shadow: 2px 2px #02010a;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-flow: row wrap;
 }
 
-.encabezado {
-	display: flex;
-	flex-direction: row;
+#titulo {
+	padding: 1% 0%;
+	font-size: 1.5em;
+	text-align: left;
+	flex: auto;
 }
 
-#encabezado .encabezado div{
-	width: 50%;
-	margin: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-nav {
+#menu {
+	padding: 1.2% 1%;
+	font-size: 1em;
 	text-align: right;
+	flex: auto;
 }
 
-h1::selection {
+.imagen {
+	width: 90%;
+	box-shadow: 2px 2px #02010a;
+}
+
+.icono {
+	width: 7%;
+}
+
+body::selection {
 	background: white;
 }
 
@@ -52,46 +62,44 @@ a {
 	text-decoration: none;
 	color: white;
 	margin: 5px;
-	padding: 5px 5px;
 }
 
-#contenido {
+section {
 	text-align: center;
-	display: flex;
-	flex-direction: column;
 }
 
-#principal {
+#central {
 	background-color: #82c3a6;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 1% 0%;
 }
 
 #secundaria {
 	background-color: #d5c75f;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 1% 0%;
+	box-sizing: border-box;
+	text-align: center;	
 }
 
-.adaptativa-porcentaje {
-	width: 80%;
-	box-shadow: 2px 2px #02010a;
+.secundaria {
+	box-sizing: border-box;
+	height: 100%;
+	background-color: #d5c75f;
+	display: flex;
+	
 }
 
-.adaptativa-porcentaje1 {
-	width: 80%;
+#izquierda {
 	border: solid 2px black;
 	box-shadow: 2px 2px #02010a;
 	transition-property: transform: rotate;
 	transition-duration: 1s;
 }
 
-.adaptativa-porcentaje1:hover {
+#izquierda:hover {
 	transform: rotate(10deg);
 }
 
-.adaptativa-porcentaje2 {
-	width: 80%;
+#derecha {
 	border: solid 2px black;
 	box-shadow: 2px 2px #02010a;
 	position: 5px 20px 0px 0px;
@@ -99,7 +107,7 @@ a {
 	transition-duration: 1s;	
 }
 
-.adaptativa-porcentaje2:hover {
+#derecha:hover {
 	transform: translate(5px, -20px);
 }
 
@@ -108,35 +116,15 @@ a {
 	flex-direction: row;
 }
 
-footer {
+#footer {
 	background: #C6d5c5;
-	padding: 10px;
+	padding: 0% 1% 0.5% 1%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-}
-
-footer div {
-	width: 100%;
-}
-
-#piedepagina {	
 	display: flex;
-	flex-direction: column;
+	flex-flow: row wrap;
 }
 
-.piedepagina {
-	display: flex;
-	flex-direction: row;
-}
-
-.pies {
-	margin: 0 center;
-}
-
-.icono {
-	width: 15px
-}
-
-h2 {
-	margin: 10px 0px 10px 0px;
+#footer div {
+	padding: 0% 1.8%;
 }
